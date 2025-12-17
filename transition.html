@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            
+            text-align:center;
+            display: inline-block;
+            padding: 10px;
+            font-size: 20px;
+
+        }
+        .nav .parent{
+            display: inline-block;
+            margin:5px 50px;
+            text-align: center;
+        }
+        .nav .parent p{
+            display: inline-block;
+            font-size: 23px;
+            position: fixed;
+            top: 20px;
+            text-align: center;
+        }
+        .child{
+            display:none;
+        }
+        .child ol>li {
+            margin-top: 10px;
+            list-style-position: inside;
+
+        }
+        .parent p:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        .parent:hover .child{
+            display: block;
+            position: fixed;
+            top: 50px;
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 5px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="parent">
+            <p>Courses</p>
+            <div class="child">
+                <ol>
+                    <li>Python Fullstack</li>
+                    <li>Java Fullstack</li>
+                    <li>Data Science</li>
+                    <li>Data Analytics</li>
+                    <li>AWS cloud</li>
+                 
+                </ol>
+            </div>
+        </div>
+        <div class="parent">
+            <p>Tutorials</p>
+            <div class="child">
+                <ol>
+                    <li>Practice coding problems</li>
+                    <li>Mock interviews</li>
+                </ol>
+            </div>
+        </div>
+        <div class="parent">
+            <p>Jobs</p>
+            <div class="child">
+                <ol>
+                    <li>Apply now</li>
+                    <li>Post updates</li>
+                    <li>Job updates</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

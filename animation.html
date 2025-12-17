@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(255,166,0,1);
+        }
+        .sun{
+            height: 200px;
+            width:200px;
+            background-color: rgb(229,151,7);
+            border-radius: 50%;
+            position: relative;
+            top:200px;
+            left: 600px;
+            z-index:1
+
+            
+
+        }
+        .shadow{
+            height:200px;
+            width:200px;
+            border-radius: 50%;
+            position:absolute;
+            top:280px;
+            left:600px;
+            animation-name: move;
+            animation-duration: 6s;
+            animation-timing-function: ease-in-out;
+            animation-delay:2s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes move{
+            0%{
+               top:300px;
+               left:630px;
+               background-color: rgb(255,255,0);
+            }
+            25%{height: 230px;
+                width:230px;
+                top:260px;
+                left:590px;
+                background-color: yellow;
+            }
+            50%{
+                height: 260px;
+                width:260px;
+                top:220px;
+                left:550px;
+                background-color: rgb(255,204,0);
+            }
+            75%{
+                height: 230px;
+                width:230px;
+                top:260px;
+                left:590px;
+                background-color: yellow;
+            }
+            100%{
+                top:300px;
+                left:630px;
+                background-color: rgb(255,255,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:white;text-align:center;">Animation</h1>
+    <div class="sun"></div>
+    <div class="shadow"></div>
+    
+</body>
+</html>
